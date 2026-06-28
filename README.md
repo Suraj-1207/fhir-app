@@ -62,7 +62,7 @@ app/
 
 **Why this is the right thing to optimize first:** Reference resolution is the foundational operation. Every downstream feature — clinical snapshot, eligibility logic, timeline, AI assist — depends on correctly grouped patient records. Optimizing JSON parsing or file I/O would yield smaller gains and wouldn't scale as well as the dataset grows.
 
-**Results:** Live in the app under the **Performance** tab. Benchmark runs on a 5,000-resource sample (the naive algorithm on the full dataset would take several minutes, making the benchmark impractical at that scale; the sample demonstrates the same asymptotic difference).
+**Results:** Live in the app under the **Performance** tab. Benchmark runs on a 20,000-resource sample (the naive algorithm on the full dataset would take several minutes, making the benchmark impractical at that scale; the sample demonstrates the same asymptotic difference).
 
 ---
 
